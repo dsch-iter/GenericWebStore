@@ -7,10 +7,14 @@ class Result
   def initialize(index)
     # div#result_0 h3 a span
     @loc = "div#result_#{index} h3 a span";
-
+  end
+  def setLocation(loc)
+    @loc = loc
+  end
+  def getLocation
+    @loc
   end
   def verifyText(result)
-    # print "LOC #{@loc}"
     val = find(:css, @loc).text
     result == val
   end
