@@ -1,6 +1,3 @@
-
-
-
 require File.join(File.dirname(__FILE__), '..', 'lib', 'core', 'search_bar')
 require File.join(File.dirname(__FILE__), '..', 'lib', 'core', 'result')
 require File.join(File.dirname(__FILE__), '..', 'lib', 'pages', 'home_page')
