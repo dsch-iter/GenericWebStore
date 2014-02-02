@@ -1,12 +1,15 @@
 
 module InstanceCreator
+  def myHomePage
+    @myHomePage ||= HomePage.new(Capybara.app_host)
+  end
+  
   def mySearchBar
-    @mySearchBar ||= SearchBar.new 
+    @mySearchBar ||= SearchBar.new ('twotabsearchtextbox')
   end
   def myResult    
-      @myResult ||= Result.new
+      @myResult ||= Result.new('0')
   end
-  #etc
 end
 World(InstanceCreator)
 

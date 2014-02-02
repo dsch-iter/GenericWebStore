@@ -1,5 +1,10 @@
-require File.join(File.dirname(__FILE__), '..', 'lib', 'searchBar')
-require File.join(File.dirname(__FILE__), '..', 'lib', 'result')
+
+
+
+require File.join(File.dirname(__FILE__), '..', 'lib', 'core', 'search_bar')
+require File.join(File.dirname(__FILE__), '..', 'lib', 'core', 'result')
+require File.join(File.dirname(__FILE__), '..', 'lib', 'pages', 'home_page')
+
 Capybara.run_server = false
 Capybara.current_driver = :selenium
 Capybara.app_host = 'http://www.amazon.com'
