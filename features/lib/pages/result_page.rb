@@ -10,8 +10,7 @@ class ResultPage
   end
   
   def verifyResult(index, anExpectedText)
-    getResult(index)
-    @result.verifyText(anExpectedText)
+    getResult(index).verifyText(anExpectedText)
   end
   
 end
