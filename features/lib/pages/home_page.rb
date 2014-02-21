@@ -7,11 +7,11 @@ class HomePage
     @searchBar = SearchBar.new ('twotabsearchtextbox')
   end
   
-    def search(query)
+  def search(query)
     @searchBar.search(query)
   end
 
   def submit()
-    @searchBar.submit()
+    @searchBar.submit
   end
 end

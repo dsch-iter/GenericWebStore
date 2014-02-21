@@ -6,3 +6,7 @@ Capybara.run_server = false
 Capybara.current_driver = :selenium
 Capybara.app_host = 'http://www.amazon.com'
 Capybara.run_server = false
+
+Before do
+  @homePage = HomePage.new(Capybara.app_host)
+end
